@@ -7,6 +7,8 @@ let media = (n1 + n2 + n3)/3;
 let n4 = 67;
 let resto = n4 % 2;
 let resultado = resto === 0;
+let maiorIdade =
+let temIngresso =
 
 //Prints
 console.log(media);
