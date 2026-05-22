@@ -10,7 +10,12 @@ let resultado = resto === 0;
 let maiorIdade = true;
 let temIngresso = false;
 let podeEntrar = maiorIdade && temIngresso;
+let name = "";
+let usuario = name || "Visitante";
+
 
 //Prints
 console.log(media);
 console.log(resultado);
+console.log(podeEntrar);
+console.log(usuario);
