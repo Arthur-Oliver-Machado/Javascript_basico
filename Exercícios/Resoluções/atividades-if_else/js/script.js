@@ -35,11 +35,34 @@
 //         alert("Invalido")
 // }
 
-let letra = prompt("Digite uma letra:").toLowerCase();
+let entrada = prompt("Digite uma letra:");
 
+// Se o usuário digitou algo e não cancelou
+if (entrada) {
+    // Transforma em maiúscula e remove espaços extras
+    let letra = entrada.toUpperCase().trim();
 
-if (letra === "A" || letra === "E" || letra === "I" || letra === "O" || letra === "U") {
-    console.log("É uma VOGAL");
+    if (letra === "A" || letra === "E" || letra === "I" || letra === "O" || letra === "U") {
+        alert("É uma VOGAL");
+    } else {
+        alert("É uma CONSOANTE");
+    }
 } else {
-    console.log("É uma CONSOANTE");
+    alert("Você cancelou ou não digitou nada!");
 }
+// let nota;
+// let nota2;
+
+// nota = Number(prompt("Digite a primeira nota"));
+// nota2 = Number(prompt("Digite a segunda nota"));
+
+// let media = (nota + nota2) /2;
+
+
+// if (media ===10) {
+// alert("Aprovado")
+// } else if (media >=7){
+// alert("Aprovado com Distinção")
+// } else {
+//     alert("Reprovado")
+// }
