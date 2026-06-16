@@ -240,9 +240,9 @@
 // alert(`Notas: ${nota1} e ${nota2}\nMédia: ${media.toFixed(1)}\nConceito: ${conceito}\nSituação: ${situacao}`);
 
 
-// // =================================================================
-// // 15. Tipos de triângulo
-// // =================================================================
+// =================================================================
+// 15. Tipos de triângulo
+// =================================================================
 // let l1 = parseFloat(prompt("(Ex 15) Lado 1:"));
 // let l2 = parseFloat(prompt("(Ex 15) Lado 2:"));
 // let l3 = parseFloat(prompt("(Ex 15) Lado 3:"));
