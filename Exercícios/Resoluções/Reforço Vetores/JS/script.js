@@ -64,3 +64,67 @@ do {
 
 //Exercicio 6
 
+/*
+let filmes = [
+    "Until Dawn o filme",
+    "Como eu era antes de você",
+    "A cinco passos de você",
+    "Para todos os garotos que ja amei",
+    "Meu namorado é um zumbi"
+]
+
+for(let i =0; i<filmes.length; i++){
+    console.log(filmes[i])
+} */
+
+//Exercicio 7 e 8
+
+/*
+let notas = [7, 8, 10, 5];
+let resultado = (notas[0] + notas[1] + notas[2] + notas[3]);
+let media = (resultado/4);
+
+console.log(resultado);
+console.log(media);*/
+
+//Exercicio 9 
+
+/*
+let idades = [15, 18, 22, 13, 30];
+
+console.log(idades[4])*/
+
+//Exercicio 10
+
+/*
+let precos = [10.50, 25.00, 8.99, 12.75];
+
+console.log(precos[2])*/
+
+//Projeto final da aula
+
+//Cadastro
+
+let jogadores = []
+
+let pontos = []
+
+
+for (let i = 0; i <3; i++){
+
+    let nome= prompt("Digite o nome: ")
+
+    let pontuacao = Number(
+        prompt("Digite a pontuação: ")
+    )
+
+    jogadores.push(nome);
+    pontos.push(pontuacao);
+}
+
+//Ranking 
+
+for(let i= 0; i <jogadores.length; i++){
+
+    console.log(jogadores[i] + " = " + pontos[i]) 
+}
