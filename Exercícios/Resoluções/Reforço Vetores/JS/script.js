@@ -101,6 +101,8 @@ let precos = [10.50, 25.00, 8.99, 12.75];
 
 console.log(precos[2])*/
 
+
+
 //Projeto final da aula
 
 //Cadastro
@@ -110,21 +112,36 @@ let jogadores = []
 let pontos = []
 
 
-for (let i = 0; i <3; i++){
+for (let i = 0; i < 3; i++) {
 
-    let nome= prompt("Digite o nome: ")
-
+    let nome = prompt("Digite o nome: ")
     let pontuacao = Number(
         prompt("Digite a pontuação: ")
     )
+
 
     jogadores.push(nome);
     pontos.push(pontuacao);
 }
 
-//Ranking 
+//Menu 
 
-for(let i= 0; i <jogadores.length; i++){
+let opcao = 0;
 
-    console.log(jogadores[i] + " = " + pontos[i]) 
-}
+do {
+    let i = prompt("Selecione o numero do jogador")
+    opcao = Number(prompt("Bem vindo! " + jogadores[i] + " Oque voce quer fazer?  1 - Jogar 2 - Ranking 3 - Sair"))
+
+    switch (opcao) {
+        case 1: while (pontos[i] > 0) {
+            alert(jogadores[i] + " Jogando...")
+            console.log(jogadores[i] + " Jogando...")
+            console.log("Sua pontuação atual é: " + pontos[i])
+            pontos[i] -= 100
+        }
+            break;
+        case 2: for (let i = 0; i < jogadores.length; i++) {
+            console.log(jogadores[i] + " = " + pontos[i])
+        }
+    }
+} while (opcao != 3);
