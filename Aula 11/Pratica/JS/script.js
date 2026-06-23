@@ -32,3 +32,11 @@ let img = document.getElementById("imagem")
     img.src = "IMGS/315371840_newjeans.jpg"
  }
 }
+
+function esconderTexto() {
+    document.getElementById("texto-2").style.display = "none";
+}
+
+function mostrarTexto() {
+    document.getElementById("texto-2").style.display = "block";
+}
