@@ -40,3 +40,4 @@ function esconderTexto() {
 function mostrarTexto() {
     document.getElementById("texto-2").style.display = "block";
 }
+
