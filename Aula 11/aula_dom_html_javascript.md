@@ -498,7 +498,7 @@ Também podemos criar novos elementos HTML usando JavaScript.
 HTML:
 
 ```html
-<div id="area"></div>
+<div id="area"></div>  
 <button onclick="criarParagrafo()">Criar parágrafo</button>
 ```
 
