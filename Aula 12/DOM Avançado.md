@@ -360,7 +360,7 @@ Mensagem
 
 # classList.toggle()
 
-## Significado
+ ## Significado
 
 ```text
 toggle = alternar
