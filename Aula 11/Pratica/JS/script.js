@@ -41,3 +41,11 @@ function mostrarTexto() {
     document.getElementById("texto-2").style.display = "block";
 }
 
+
+function criarParagrafo() {
+    let novoParagrafo = document.createElement("p");
+    novoParagrafo.innerText = "Este parágrafo foi criado com JavaScript.";
+
+    document.getElementById("area").appendChild(novoParagrafo);
+}
+ 
