@@ -9,12 +9,12 @@ function alterarTitulo() {
 function mostrarNome() {
     let nome = document.getElementById("nome").value;
     document.getElementById("resultado").innerText = "Ola " + nome + "!";
-} 
+}
 
 function verificarIdade() {
     let idade = Number(document.getElementById("idade").value);
 
-    if (idade >=18) {
+    if (idade >= 18) {
         document.getElementById("resultadoIdade").innerText = "Você é maior de idade"
     } else if (idade == 17) {
         document.getElementById("resultadoIdade").innerText = "Você é quase maior de idade."
@@ -24,13 +24,13 @@ function verificarIdade() {
 }
 
 function alterarImagem() {
-let img = document.getElementById("imagem")
+    let img = document.getElementById("imagem")
 
- if (img.src.includes("IMGS/315371840_newjeans.jpg")) {
-    img.src = "IMGS/NewJeans_Get_Up_Teaser_7.jpg"
- } else {
-    img.src = "IMGS/315371840_newjeans.jpg"
- }
+    if (img.src.includes("IMGS/315371840_newjeans.jpg")) {
+        img.src = "IMGS/NewJeans_Get_Up_Teaser_7.jpg"
+    } else {
+        img.src = "IMGS/315371840_newjeans.jpg"
+    }
 }
 
 function esconderTexto() {
@@ -48,4 +48,18 @@ function criarParagrafo() {
 
     document.getElementById("area").appendChild(novoParagrafo);
 }
- 
+
+
+function removerAviso() {
+    document.getElementById("aviso").remove();
+}
+
+
+function calcularIMC() {
+    let peso = Number(document.getElementById("peso").value);
+    let altura = Number(document.getElementById("altura").value);
+
+    let imc = peso / (altura * altura);
+
+    document.getElementById("resultado").innerText = "Seu IMC é: " + imc.toFixed(2);
+}
