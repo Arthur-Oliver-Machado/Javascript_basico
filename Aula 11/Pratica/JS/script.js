@@ -1,67 +1,67 @@
-function mostrarMensagem() {
-    alert("Você clicou no botão, otario.")
-}
+// function mostrarMensagem() {
+//     alert("Você clicou no botão, otario.")
+// }
 
-function alterarTitulo() {
-    document.getElementById("titulo").innerText = "Este titulo foi altetado com JavaScript";
-}
+// function alterarTitulo() {
+//     document.getElementById("titulo").innerText = "Este titulo foi altetado com JavaScript";
+// }
 
-function mostrarNome() {
-    let nome = document.getElementById("nome").value;
-    document.getElementById("resultado").innerText = "Ola " + nome + "!";
-}
+// function mostrarNome() {
+//     let nome = document.getElementById("nome").value;
+//     document.getElementById("resultado").innerText = "Ola " + nome + "!";
+// }
 
-function verificarIdade() {
-    let idade = Number(document.getElementById("idade").value);
+// function verificarIdade() {
+//     let idade = Number(document.getElementById("idade").value);
 
-    if (idade >= 18) {
-        document.getElementById("resultadoIdade").innerText = "Você é maior de idade"
-    } else if (idade == 17) {
-        document.getElementById("resultadoIdade").innerText = "Você é quase maior de idade."
-    } else {
-        document.getElementById("resultadoIdade").innerText = "Você é menor de idade"
-    }
-}
+//     if (idade >= 18) {
+//         document.getElementById("resultadoIdade").innerText = "Você é maior de idade"
+//     } else if (idade == 17) {
+//         document.getElementById("resultadoIdade").innerText = "Você é quase maior de idade."
+//     } else {
+//         document.getElementById("resultadoIdade").innerText = "Você é menor de idade"
+//     }
+// }
 
-function alterarImagem() {
-    let img = document.getElementById("imagem")
+// function alterarImagem() {
+//     let img = document.getElementById("imagem")
 
-    if (img.src.includes("IMGS/315371840_newjeans.jpg")) {
-        img.src = "IMGS/NewJeans_Get_Up_Teaser_7.jpg"
-    } else {
-        img.src = "IMGS/315371840_newjeans.jpg"
-    }
-}
+//     if (img.src.includes("IMGS/315371840_newjeans.jpg")) {
+//         img.src = "IMGS/NewJeans_Get_Up_Teaser_7.jpg"
+//     } else {
+//         img.src = "IMGS/315371840_newjeans.jpg"
+//     }
+// }
 
-function esconderTexto() {
-    document.getElementById("texto-2").style.display = "none";
-}
+// function esconderTexto() {
+//     document.getElementById("texto-2").style.display = "none";
+// }
 
-function mostrarTexto() {
-    document.getElementById("texto-2").style.display = "block";
-}
-
-
-function criarParagrafo() {
-    let novoParagrafo = document.createElement("p");
-    novoParagrafo.innerText = "Este parágrafo foi criado com JavaScript.";
-
-    document.getElementById("area").appendChild(novoParagrafo);
-}
+// function mostrarTexto() {
+//     document.getElementById("texto-2").style.display = "block";
+// }
 
 
-function removerAviso() {
-    document.getElementById("aviso").remove();
-}
+// function criarParagrafo() {
+//     let novoParagrafo = document.createElement("p");
+//     novoParagrafo.innerText = "Este parágrafo foi criado com JavaScript.";
+
+//     document.getElementById("area").appendChild(novoParagrafo);
+// }
 
 
-function calcularIMC() {
-    let peso = Number(document.getElementById("peso").value);
-    let altura = Number(document.getElementById("altura").value);
+// function removerAviso() {
+//     document.getElementById("aviso").remove();
+// }
 
-    let imc = peso / (altura * altura);
 
-    document.getElementById("resultado").innerText = "Seu IMC é: " + imc.toFixed(2);
-}
+// function calcularIMC() {
+//     let peso = Number(document.getElementById("peso").value);
+//     let altura = Number(document.getElementById("altura").value);
+
+//     let imc = peso / (altura * altura);
+
+//     document.getElementById("resultado").innerText = "Seu IMC é: " + imc.toFixed(2);
+// }
 
 
