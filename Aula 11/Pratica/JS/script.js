@@ -64,4 +64,32 @@
 //     document.getElementById("resultado").innerText = "Seu IMC é: " + imc.toFixed(2);
 // }
 
+// function adicionarTarefa() {
+//     let textoTarefa = document.getElementById("tarefa").value;
 
+//     let item = document.createElement("li");
+
+//     document.getElementById("lista").appendChild(item);
+
+//     document.getElementById("tarefa").value = "";
+// }
+
+
+function adicionarTarefa() {
+    let textoTarefa = document.getElementById("tarefa").value;
+
+    // Se o usuário tentar adicionar uma tarefa vazia, a função para aqui
+    if (textoTarefa.trim() === "") {
+        alert("Digite uma tarefa válida!");
+        return;
+    }
+
+    let item = document.createElement("li");
+    
+    // LINHA CORRIGIDA: Define o texto que vai dentro do <li>
+    item.innerText = textoTarefa;
+
+    document.getElementById("lista").appendChild(item);
+
+    document.getElementById("tarefa").value = "";
+}
