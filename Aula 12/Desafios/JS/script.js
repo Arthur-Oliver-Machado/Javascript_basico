@@ -22,5 +22,8 @@
 //     "click",
 //     digitarMensagem
 // )
+const botao = document.getElementById("botao");
 
-document.body.classList.toggle("dark")
+botao.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+});

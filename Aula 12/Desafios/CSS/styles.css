@@ -1,4 +1,15 @@
-.dark {
-    background: black;
-    color: withe;
+body{
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.dark{
+    background: #121212;
+    color: white;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
 }
